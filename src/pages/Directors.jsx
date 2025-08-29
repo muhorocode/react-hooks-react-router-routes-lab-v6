@@ -13,7 +13,7 @@ function Directors() {
     <>
     <h1>Directors Page</h1>
     {directors.map((director)=>(
-      <div key={director.id}>
+      <article key={director.id}>
         <h2>{director.name}
           <ul>
             {director.movies.map((movie, index)=>(
@@ -21,7 +21,7 @@ function Directors() {
             ))}
           </ul>
         </h2>
-      </div>
+      </article>
     ))}
     </>
   );
