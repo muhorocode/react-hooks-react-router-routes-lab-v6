@@ -4,13 +4,14 @@ import Actors from './pages/Actors'
 import Directors from './pages/Directors'
 import Home from './pages/Home'
 import Movie from './pages/Movie'
+import ErrorPage from './pages/ErrorPage'
 
 
 const routes = [
    {
     path:'/',
     element:<App/>,
-    errorElement:<h1>Oops! Looks like something went wrong.</h1>,
+    errorElement:<ErrorPage/>,
     children:[
        {
         path:'/',
